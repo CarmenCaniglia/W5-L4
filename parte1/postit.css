@@ -1,0 +1,70 @@
+body{
+    font-family: 'Indie Flower', sans-serif ;
+    margin: 0;
+    height: 100%;
+}
+
+h2{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+p{
+    font-size: 400;
+}
+main.board{
+    background-color: #666666;
+   height: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 20px solid lightgray;
+   
+}
+#postit{
+    
+    display: flex;
+    flex-wrap: wrap; 
+   justify-content: center;
+   
+}
+
+#postit article {
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    margin: 1em;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 7px black;
+    transition: transform 0.3s ease-in-out;
+    
+   
+}
+
+#postit article:hover{
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+#postit-1, #postit-5, #postit-7{
+    background:linear-gradient(0deg, #7d7d5f 0%, #F8F8C6 33%);
+    transform: rotate(-8deg);
+ 
+}
+
+#postit-2, #postit-4, #postit-8{
+    background:linear-gradient(0deg, #758d77 0%, #C6F6C9 33%);
+    transform: rotate(8deg);
+   
+}
+#postit-3, #postit-6{
+    background:linear-gradient(0deg, #828299 0%, #C7C7F5 33%);
+    transform: rotate(-9deg);
+   
+}
+

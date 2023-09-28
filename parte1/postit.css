@@ -42,7 +42,6 @@ main.board{
     justify-content: center;
     box-shadow: 3px 3px 7px black;
     transition: transform 0.3s ease-in-out;
-    
    
 }
 
@@ -54,17 +53,41 @@ main.board{
 #postit-1, #postit-5, #postit-7{
     background:linear-gradient(0deg, #7d7d5f 0%, #F8F8C6 33%);
     transform: rotate(-8deg);
- 
+    animation: animationPostit 2s linear 0s;
 }
 
 #postit-2, #postit-4, #postit-8{
     background:linear-gradient(0deg, #758d77 0%, #C6F6C9 33%);
     transform: rotate(8deg);
-   
+    animation: animationPostit2 3s linear 0s;
 }
 #postit-3, #postit-6{
     background:linear-gradient(0deg, #828299 0%, #C7C7F5 33%);
     transform: rotate(-9deg);
-   
+    animation: animationPostit 4s linear 0s;
 }
 
+@keyframes animationPostit {
+    0%{
+        opacity: 0;
+        scale: 5;
+        transform: translateY(-100%) rotate(0deg)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) rotate(360deg)
+    }
+    
+}
+@keyframes animationPostit2 {
+    0%{
+        opacity: 0;
+        scale: 5;
+        transform: translateY(100%) rotate(0deg)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) rotate(-360deg)
+    }
+    
+}
